@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/styles.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Raleway:300" rel="stylesheet">
+    <title>Gnomes-R-Us</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gnomes-R-Us</h1>
+      <div class="form-container">
+        <form id="buy-a-gnome">
+          <div class="radio">
+            <label>
+              <input type="radio" name="gnome" value="Amelie's Dad's Gnome" checked>
+            </label>
+            <img src="http://data.whicdn.com/images/4456/large.jpg" alt="Amelie Gnome" height="150">
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gnome" value="Netflix 'n Chill Gnome">
+            </label>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/German_garden_gnome.jpg" alt="Lounging Gnome" height="150">
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gnome" value="Slayer Gnome">
+            </label>
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/13/29/c5/1329c56700b82717d57f7553d444a0a1.jpg" alt="Biker Gnome" height="150">
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="name">Enter your name:</label>
+            <input id="name" class="form-control" type="text" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="address">Enter your Address</label>
+            <input id="address-line1" class="form-control" type="text" placeholder="Address line 1">
+            <input id="address-line2" class="form-control" type="text" placeholder="Address line 2">
+            <input id="address-city" class="form-control" type="text" placeholder="City">
+            <input id="address-state" class="form-control" type="text" placeholder="State">
+            <input id="address-zip" class="form-control" type="text" placeholder="Zip code">
+          </div>
+
+          <button type="submit" class="btn">Buy!</button>
+        </form>
+
+        <div id="receipt">
+          <h3>Below is your order confirmation:</h3>
+          <ul>
+            <li>Name: <span class="receipt-name"></span></li>
+            <li>Address:
+              <ul>
+                <li><span class="receipt-address-line1"></span></li>
+                <li><span class="receipt-address-line2"></span></li>
+                <li><span class="receipt-address-city-state-zip"></span></li>
+              </ul>
+            </li>
+            <li>Gnome: <span class="receipt-gnome"></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
